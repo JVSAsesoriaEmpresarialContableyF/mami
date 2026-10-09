@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1030">
+  <meta name="robots" content="noindex, nofollow">
+  <title>🌷 Para ti, mami</title>
+  <meta property="og:title" content="🌷 Para ti, mami">
+  <meta property="og:description" content="Un regalo de tus hijos. Toca la puerta.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌷%3C/text%3E%3C/svg%3E">
+  <style>
+    html, body { margin: 0; height: 100%; background: #0b1030; overflow: hidden; }
+    #regalo { position: fixed; inset: 0; width: 100%; height: 100%; height: 100dvh; border: 0; display: block; background: #0b1030; }
+    #ayuda {
+      position: fixed; left: 0; right: 0; bottom: max(10px, env(safe-area-inset-bottom)); text-align: center;
+      font: 500 14px/1.4 system-ui, -apple-system, 'Segoe UI', sans-serif; color: #fff6e6;
+      opacity: 0; pointer-events: none; transition: opacity .6s ease;
+    }
+    #ayuda.visible { opacity: 1; pointer-events: auto; }
+    #ayuda a { color: #ffd68c; background: rgba(11,16,48,.82); padding: 9px 16px; border-radius: 999px; text-decoration: none; display: inline-block; border: 1px solid rgba(255,214,140,.55); }
+  </style>
+</head>
+<body>
+  <iframe
+    id="regalo"
+    title="Para ti, mami"
+    src="https://script.google.com/a/macros/jvsasesoria.com/s/AKfycbyyCvwfH2TJdQFoHX4gEhxWnIophPPJdOxMaefe8YVZfhtBm8U8_kMV8QvLOmSkRvr-aA/exec"
+    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+    allowfullscreen
+    referrerpolicy="no-referrer"></iframe>
+
+  <!-- Si la pantalla se queda en blanco, este botón abre el regalo directamente -->
+  <div id="ayuda">
+    <a href="https://script.google.com/a/macros/jvsasesoria.com/s/AKfycbyyCvwfH2TJdQFoHX4gEhxWnIophPPJdOxMaefe8YVZfhtBm8U8_kMV8QvLOmSkRvr-aA/exec" target="_top" rel="noopener">¿No carga? Ábrelo aquí 🌷</a>
+  </div>
+
+  <noscript>
+    <p style="color:#fff;font:16px system-ui;padding:24px">Para ver el regalo activa JavaScript o
+      <a style="color:#ffd68c" href="https://script.google.com/a/macros/jvsasesoria.com/s/AKfycbyyCvwfH2TJdQFoHX4gEhxWnIophPPJdOxMaefe8YVZfhtBm8U8_kMV8QvLOmSkRvr-aA/exec">ábrelo aquí</a>.</p>
+  </noscript>
+
+  <script>
+    // Muestra el botón de ayuda solo si pasan unos segundos (por si el navegador bloquea el marco)
+    (function () {
+      var ayuda = document.getElementById('ayuda');
+      setTimeout(function () { ayuda.classList.add('visible'); }, 25000);
+      setTimeout(function () { ayuda.classList.remove('visible'); }, 40000);
+    })();
+  </script>
+</body>
+</html>
